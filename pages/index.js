@@ -27,10 +27,10 @@ export default function Home() {
       <main>
           <div className={styles.pageContainer}>
             <section className={styles.heroContainer}>
-              <div className="relative w-[40vw] flex flex-col">
+              {/* <div className="relative w-[40vw] flex flex-col"> */}
                 <div className={styles.hero}>We handle the <span id="cycle"></span> <br></br>so <em>he</em> doesn&apos;t have to</div>
-                <div className='bg-red-500 absolute z-40 mt-24 text-2xl w-2/3 md:bottom-10 text-white p-6 cursor-pointer rounded-r-3xl'><a href="/pricing#rates">Book a removalist</a></div>
-              </div>
+                {/* <div className='bg-red-500 absolute z-40 mt-24 text-2xl w-2/3 md:bottom-10 text-white p-6 cursor-pointer rounded-r-3xl'><a href="/pricing#rates">Book a removalist</a></div> */}
+              {/* </div> */}
                 
                
 
