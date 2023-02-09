@@ -1,1 +1,38 @@
 
+    .cycle{
+        display:inline-block;
+        line-height:1;
+    }
+    #cycle{
+        display:inline-block;
+        line-height:1;
+    }
+
+    /* this is the animation css for the text reel */
+    #cycle:after {
+        animation-name: cycle; 
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        content: ""; 
+      }
+    
+    @keyframes cycle {
+      0% {
+        content: "things.";
+      }
+      20% {
+        content: "a website";
+      }
+      40% {
+        content: "a web app";
+      }
+      60% {
+          content: "a mobile app"
+      }
+      80% {
+        content: "a PWA";
+      }
+      100%{
+          content: "things."
+      }
+    }
