@@ -22,7 +22,7 @@ const handlesubmit = function(e) {
       
       <div className="text-2xl mb-12">Contact us</div>
 
-      <input type="hidden" name="access_key" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/>
+      {/* <input type="hidden" name="access_key" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/> */}
 
       <MDBInput label='Name' v-model='name' wrapperClass='mb-4' />
 
