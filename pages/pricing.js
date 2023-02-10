@@ -29,13 +29,13 @@ export default function Pricing() {
 
             <div className={styles.quoteTitle}>Not sure about what you need?</div>
             <div className={styles.quoteButton}><strong><a href="/pricing#contact">Get a free, in-person quote</a></strong></div>
-            <div className={styles.quoteText}>We always prefer to come out and give quotes on larger or more complex jobs. Fill in the form below with some details about your job and a way for us to contact you.</div>
+            <div id="rates" className={styles.quoteText}>We always prefer to come out and give quotes on larger or more complex jobs. Fill in the form below with some details about your job and a way for us to contact you.</div>
 
         </section>
         <div className={styles.header2}>Our Rates </div>
         </div>
 
-<RatesGrid id="rates"/>
+<RatesGrid />
 <Contact/>
 <Footer/>
 
@@ -50,7 +50,7 @@ export default function Pricing() {
 
 const styles = {
     pageContainer: "mt-24 vh-[100vh] vw-[100vw]",
-    header: "font-sans text-4xl p-12 pl-6 text-left",
+    header: "font-sans text-4xl p-12 pl-6 text-left md:pl-12",
     header2: "text-3xl px-12 pb-2 pt-10 text-left ",
     quoteTitle: "text-3xl text-center px-12 sm:px-0",
     quoteText: "w-[60vw] text-center",

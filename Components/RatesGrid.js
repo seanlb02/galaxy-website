@@ -38,7 +38,7 @@ function RatesGrid() {
             For large or time critical residential and commercial jobs we take 4 removalists 
           </Card.Text>
         </Card.Body>
-        <Card.Footer className={styles.cardFooter}>
+        <Card.Footer id="contact"  className={styles.cardFooter}>
             <div>$200 per hour</div>
         <button><a href="/pricing#contact"><strong>Book Now</strong></a></button>
         </Card.Footer>

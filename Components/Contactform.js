@@ -17,10 +17,10 @@ export default function Contact() {
 // }
 
   return (
-      <div id="contact" className="flex justify-center">
+      <div id="contact" className="flex justify-center mt-12">
     <form id='form'  className='text-center mb-12 w-[80vw]' method="POST" action="https://api.web3forms.com/submit" >
       
-      <div className="text-2xl mb-12">Contact us</div>
+      <div className="text-3xl mb-12">Contact us</div>
 
       <input type="hidden" name="apikey" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/>
 

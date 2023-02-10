@@ -39,7 +39,7 @@ function GroupExample() {
             We offer pack and move solutions for those juggling the move with work and family life. All materials provided.
           </Card.Text>
         </Card.Body>
-        <Card.Footer>
+        <Card.Footer id="services">
             <button className="text-blue-500">Learn More</button>
         </Card.Footer>
       </Card>
