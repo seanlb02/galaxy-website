@@ -7,18 +7,18 @@ import Swal from 'sweetalert2'
 export default function Contact() {
 
 
-const handlesubmit = function(e) {
-    // e.preventDefault();
-    Swal.fire(
-        'Message sent!',
-        'Thanks for getting in touch. Expect a response within 2 days, or feel free to give us a call.',
-        'success'
-      )
-}
+// const handlesubmit = function(e) {
+//     // e.preventDefault();
+//     Swal.fire(
+//         'Message sent!',
+//         'Thanks for getting in touch. Expect a response within 2 days, or feel free to give us a call.',
+//         'success'
+//       )
+// }
 
   return (
       <div id="contact" className="flex justify-center">
-    <form id='form'  className='text-center  w-[80vw]' method="POST" action="https://api.web3forms.com/submit" >
+    <form id='form'  className='text-center mb-12 w-[80vw]' method="POST" action="https://api.web3forms.com/submit" >
       
       <div className="text-2xl mb-12">Contact us</div>
 
