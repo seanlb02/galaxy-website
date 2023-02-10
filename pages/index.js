@@ -57,7 +57,7 @@ export default function Home() {
                         <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Range of <a href="/#pricing">rates</a>avaliable</li>
                       </ul>
                       <div className={styles.buttonContainer}>
-                          <div className={styles.imageButton}><strong>Let&apos;s talk moving</strong></div>
+                          <div className={styles.imageButton}><a href="/pricing#contact"><strong>Let&apos;s talk moving</strong></a></div>
                       </div>
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
@@ -76,7 +76,7 @@ export default function Home() {
                         <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>All move-in logistics handled by us</li>
                       </ul>
                       <div className={styles.buttonContainer}>
-                          <div className={styles.imageButton}><strong>Let&apos;s talk storage</strong></div>
+                          <div className={styles.imageButton}><a href="/pricing#contact"><strong>Let&apos;s talk storage</strong></a></div>
                       </div>
                   </Col>
                   <Col xs={12} md={6} className="px-0">
@@ -94,7 +94,7 @@ export default function Home() {
                         <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Call to organise a free quote</li>
                       </ul>
                       <div className={styles.buttonContainer}>
-                          <div className={styles.imageButton}><strong>Let&apos;s talk office moves</strong></div>
+                          <div className={styles.imageButton}><a href="/pricing#contact"><strong>Let&apos;s talk office moves</strong></a></div>
                       </div>
                   </Col>
                   <Col xs={12} md={6} className="px-0"><Image className={styles.storeImage} height={200} width={400} src="/office.jpg"></Image></Col>
@@ -109,7 +109,7 @@ export default function Home() {
                         <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>All returnable materials and boxes supplied Free</li>
                       </ul>
                       <div className={styles.buttonContainer}>
-                          <div className={styles.imageButton}><strong>Let&apos;s talk storage</strong></div>
+                          <div className={styles.imageButton}><a href="/pricing#contact"><strong>Let&apos;s talk packing</strong></a></div>
                       </div>
                   </Col>
                   <Col xs={12} md={6}  className="px-0">
