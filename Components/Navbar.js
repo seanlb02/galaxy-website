@@ -15,7 +15,7 @@ export default function NavTab() {
         <Navbar.Collapse id="responsive-navbar-nav">
           
           <Nav className="ms-auto d-flex gap-4 text-dark">
-          <Nav.Link className={styles.itemfonts} href="/"><Image height={25} width={25} src="/phone.png"></Image>0420956947</Nav.Link>
+          <Nav.Link className={styles.itemfonts} href="/"><Image height={25} width={25} src="/phone.png"></Image>0404966779</Nav.Link>
 
             <Nav.Link className={styles.itemfonts} href="/pricing#contact">Contact</Nav.Link>
             <Nav.Link className={styles.itemfonts} href="/#services">What we do</Nav.Link>

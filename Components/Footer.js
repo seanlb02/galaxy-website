@@ -8,7 +8,7 @@ export default function Footer() {
       <section id="contact" className='d-flex justify-content-center  p-4 border-bottom'>
     
       <div className="flex justify-center lg:justify-center text-2xl gap-2 text-white">
-                <MDBIcon icon="phone" className="" /><Image height={25} width={25} src="/phonewhite.png"></Image>0420956947
+                <MDBIcon icon="phone" className="" /><Image height={25} width={25} src="/phonewhite.png"></Image>0404966779
               </div>
       </section>
 
