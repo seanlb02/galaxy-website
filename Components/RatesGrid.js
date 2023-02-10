@@ -5,7 +5,7 @@ function RatesGrid() {
   return (
     <CardGroup className="p-12 gap-3">
       <Card className="shadow">
-        <Card.Img variant="top" src="holder.js/100px160" />
+        {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
         <Card.Body>
           <Card.Title>Two Removalists with Truck</Card.Title>
           <Card.Text>
@@ -18,7 +18,7 @@ function RatesGrid() {
         </Card.Footer>
       </Card>
       <Card className="shadow">
-        <Card.Img variant="top" src="holder.js/100px160" />
+        {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
         <Card.Body>
           <Card.Title>Three Removalists with Truck <em>(Reccomended)</em></Card.Title>
           <Card.Text>
@@ -31,7 +31,7 @@ function RatesGrid() {
         </Card.Footer>
       </Card>
       <Card className="shadow">
-        <Card.Img variant="top" src="holder.js/100px160" />
+        {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
         <Card.Body>
           <Card.Title>Four removalists and a truck</Card.Title>
           <Card.Text>

@@ -8,7 +8,7 @@ export default function Contact() {
 
 
 const handlesubmit = function(e) {
-    e.preventDefault;
+    // e.preventDefault();
     Swal.fire(
         'Message sent!',
         'Thanks for getting in touch. Expect a response within 2 days, or feel free to give us a call.',
@@ -18,21 +18,23 @@ const handlesubmit = function(e) {
 
   return (
       <div id="contact" className="flex justify-center">
-    <form id='form' className='text-center  w-[80vw]' onSubmit={handlesubmit}>
+    <form id='form'  className='text-center  w-[80vw]' method="POST" action="https://api.web3forms.com/submit" >
       
       <div className="text-2xl mb-12">Contact us</div>
 
-      {/* <input type="hidden" name="access_key" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/> */}
+      <input type="hidden" name="apikey" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/>
 
-      <MDBInput label='Name' v-model='name' wrapperClass='mb-4' />
+      <MDBInput label='Name' name="full_name" v-model='name' wrapperClass='mb-4' />
 
-      <MDBInput type='email' label='Email address' v-model='email' wrapperClass='mb-4' />
+      <MDBInput type='email' label='Email address' name="email" v-model='email' wrapperClass='mb-4' />
 
-      <MDBInput label='Job type' v-model='Mobile' wrapperClass='mb-4' />
+      <MDBInput label='Job type' v-model='Mobile' name="job_type" wrapperClass='mb-4' />
 
-      <MDBTextArea wrapperClass='mb-4' label='Job details (location, rooms, items, access ...)' />
+      <MDBTextArea wrapperClass='mb-4' name="details" label='Job details (location, date, rooms/items, access ...)' />
 
-      <MDBBtn color='primary' block className='my-4'>
+      <MDBInput label='Mobile' v-model='Mobile' name="job_type" wrapperClass='mb-4' />
+
+      <MDBBtn  color='primary' block className='my-4'>
         Send
       </MDBBtn>
     </form>
