@@ -9,8 +9,8 @@ import stylesheet from '../styles/Home.module.css'
 export default function NavTab() {
   return (
     <Navbar className="w-[100vw]" collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
-      <Container className="py-2 pl-0 ml-0">
-        <Navbar.Brand className={styles.logo} href="/"><Image className="h-24 w-full" src="/logo.svg" height={100} width={200}/></Navbar.Brand>
+      <Container fluid className="py-2 w-full pe-5 md:pe-6">
+        <Navbar.Brand className={styles.logo} href="/"><Image className="h-auto w-auto" src="/logo.svg" height={150} width={300}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-none outline-none" />
         <Navbar.Collapse id="responsive-navbar-nav">
           
@@ -31,6 +31,6 @@ export default function NavTab() {
 
 const styles = {
   itemfonts: "text-xl flex gap-2",
-  logo: "h-full pl-0 w-18 lg:h-36"
+  logo: "h-full pl-0 w-18 lg:h-full lg:w-full"
 
 }

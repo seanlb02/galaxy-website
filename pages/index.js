@@ -31,7 +31,7 @@ export default function Home() {
                 {/* <div className="relative w-[40vw] flex flex-col"> */}
                   <div className={styles.hero}>We handle the <span id="cycle"></span> <br></br>so <em>he</em> doesn&apos;t have to</div>
                   <div className='bg-red-500 absolute z-40 mt-24 md:text-2xl xs:text-lg w-2/3 md:bottom-36 xs:bottom-20 text-white p-2 lg:p-6 cursor-pointer rounded-r-3xl'><a href="/pricing#contact">Book removals</a></div>
-                  <div className='bg-red-500 absolute z-40 mt-24 md:text-2xl xs:text-lg w-2/3 md:bottom-14 xs:bottom-6 text-white p-2 lg:p-6 cursor-pointer rounded-r-3xl'><a href="/pricing#contact">Book packing</a></div>
+                  <div className='bg-red-500 absolute z-40 mt-24 md:text-2xl xs:text-lg w-2/3 md:bottom-14 xs:bottom-6 text-white p-2 lg:p-6  cursor-pointer rounded-r-3xl'><a href="/pricing#contact">Book packing</a></div>
 
                 {/* </div> */}
                   
@@ -136,7 +136,7 @@ const styles = {
   heroTab: " border-2 right-0 h-56 w-2/5 bg-blue-400 rounded-2xl",
 
   bio: "",
-  experience: "font-serif flex items-center justify-center py-12 pt-24 pb-5 text-center text-2xl mx-5 lg:text-4xl word-wrap",
+  experience: "font-serif flex items-center justify-center py-12 lg:pt-24 pt-12 pb-5 text-center text-2xl mx-5 lg:text-4xl word-wrap",
 
   // storageContainer: " flex flex-col w-[100vw] h-full lg:flex-row bg-yellow-100",
   //   section: "flex flex-1 flex-col mt-12 text-left",
