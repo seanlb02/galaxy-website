@@ -3,9 +3,9 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 function GroupExample() {
   return (
-    <CardGroup className="p-12 pt-0 gap-2">
+    <CardGroup className="p-12 pt-0 gap-3">
       <Card className="shadow">
-        <Card.Img variant="top" src="/road.jpg" height="160px" width="100px"/>
+        <Card.Img variant="top" src="/openhouse.jpg" height="160px" width="100px"/>
         <Card.Body>
           <Card.Title>Declutter to sell</Card.Title>
           <Card.Text>

@@ -9,7 +9,7 @@ import stylesheet from '../styles/Home.module.css'
 export default function NavTab() {
   return (
     <Navbar className="w-[100vw]" collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
-      <Container fluid className="py-2 w-full pe-5 md:pe-6">
+      <Container fluid className="py-2 w-full pe-5 ps-3 md:pe-6">
         <Navbar.Brand className={styles.logo} href="/"><Image className="h-auto w-auto" src="/logo.svg" height={150} width={300}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-none outline-none" />
         <Navbar.Collapse id="responsive-navbar-nav">
