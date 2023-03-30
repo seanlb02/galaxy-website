@@ -46,8 +46,8 @@ export default function Home() {
             <CardGrid className="p-4"/>
             
             </section>
-            <Container  className="p-0 m-0" fluid xs={{ gutter: 0 }}>
-                <Row xs={{ gutter: 0 }}  noGutters={true} className="pr-0 gutter-x-0">
+            <Container  className="p-0 m-0 flex flex-col mt-4" fluid xs={{ gutter: 0 }}>
+                <Row xs={{ gutter: 0 }}  noGutters={true} className="pr-0 gutter-x-0 flex-1 grow">
                   <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-100 p-12">
                       <div className={styles.sectionTitle}>House and apartment relocations</div>
                       <ul className={styles.sectionList}>
@@ -66,7 +66,7 @@ export default function Home() {
                   </Col>
                 </Row>
 
-                <Row xs={{ gutter: 0 }} noGutters={true} className="d-flex flex-row-reverse">
+                <Row xs={{ gutter: 0 }} noGutters={true} className="d-flex flex-1 flex-row-reverse grow">
                   <Col xs={12} md={6} className=" d-flex flex-col justify-center bg-yellow-100 p-12">
                       <div className={styles.sectionTitle}>Local self-storage <strong>experts</strong> </div>
                       <ul className={styles.sectionList}>
@@ -84,7 +84,7 @@ export default function Home() {
                   </Col>
                 </Row>
 
-                <Row lg={{ gutter: 0 }}  noGutters={true} className="flex-grow-1">
+                <Row lg={{ gutter: 0 }}  noGutters={true} className="flex-1 grow ">
                   <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-100 p-12">
                       <div className={styles.sectionTitle}>Office and warehouse relocations</div>
                       <ul className={styles.sectionList}>
@@ -100,7 +100,7 @@ export default function Home() {
                   <Col xs={12} md={6} className="px-0"><Image className={styles.storeImage} height={200} width={400} src="/office.jpg"></Image></Col>
                 </Row>
 
-                <Row xs={{ gutter: 0 }} noGutters={true} className="d-flex flex-row-reverse flex-grow-1">
+                <Row xs={{ gutter: 0 }} noGutters={true} className="d-flex flex-row-reverse flex-1 grow">
                   <Col xs={12} md={6} className=" d-flex flex-col justify-center bg-yellow-100 p-12">
                       <div className={styles.sectionTitle}>Packing and unpacking</div>
                       <ul className={styles.sectionList}>
@@ -112,7 +112,7 @@ export default function Home() {
                           <div className={styles.imageButton}><a href="/pricing#contact"><strong>Let&apos;s talk packing</strong></a></div>
                       </div>
                   </Col>
-                  <Col xs={12} md={6}  className="px-0">
+                  <Col xs={12} md={6}  className="px-0 ">
                     <Image className={styles.storeImage} height={200} width={400} src="/packing.jpg"></Image>
                   </Col>
                 </Row>
@@ -143,7 +143,7 @@ const styles = {
       sectionTitle: "text-center text-2xl sm:text-3xl lg:text-4xl mb-12",
       sectionList: "text-m lg:text-xl text-left gap-4 justify-center align-center",
 
-    storeImage: "h-auto w-full",
+    storeImage: "flex max-h-1/4 w-full object-contain ",
     buttonContainer: "flex justify-center items-center w-full mt-12",
     imageButton: "bottom-20 left-56 w-fit p-2 rounded-2xl bg-green-400 border-2 border-white",
 

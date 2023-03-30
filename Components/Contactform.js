@@ -32,7 +32,7 @@ export default function Contact() {
 
       <MDBTextArea wrapperClass='mb-4' name="details" label='Job details (location, date, rooms/items, access ...)' />
 
-      <MDBInput label='Mobile' v-model='Mobile' name="job_type" wrapperClass='mb-4' />
+      <MDBInput label='Mobile' v-model='Mobile' name="mobile wrapperClass='mb-4' />
 
       <MDBBtn  color='primary' block className='my-4'>
         Send
