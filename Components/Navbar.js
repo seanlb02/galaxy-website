@@ -17,6 +17,7 @@ export default function NavTab() {
           <Nav className="ms-auto d-flex gap-4 text-dark">
           <Nav.Link className={styles.itemfonts}><Image height={25} width={25} src="/phone.png"></Image>0404966779</Nav.Link>
 
+            <Nav.Link className={styles.itemfonts} href="/">Home</Nav.Link>
             <Nav.Link className={styles.itemfonts} href="/pricing#contact">Contact</Nav.Link>
             <Nav.Link className={styles.itemfonts} href="/#services">What we do</Nav.Link>
             <Nav.Link className={styles.itemfonts} href="/pricing">Pricing</Nav.Link>

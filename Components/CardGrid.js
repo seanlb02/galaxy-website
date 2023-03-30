@@ -3,7 +3,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 function GroupExample() {
   return (
-    <CardGroup className="p-12 pt-0 gap-3">
+    <CardGroup className="p-12 pt-0 lg:mb-5 mb-0 gap-3">
       <Card className="shadow">
         <Card.Img variant="top" src="/openhouse.jpg" height="160px" width="100px"/>
         <Card.Body>

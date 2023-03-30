@@ -17,10 +17,9 @@ export default function Contact() {
 // }
 
   return (
-      <div id="contact" className="flex justify-center mt-12">
+      <div id="contact" className="flex bg-green-500 w-1/2 justify-center mt-12">
     <form id='form'  className='text-center mb-12 w-[80vw]' method="POST" action="https://api.web3forms.com/submit" >
       
-      <div className="text-3xl mb-12">Contact us</div>
 
       <input type="hidden" name="apikey" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/>
 
@@ -28,11 +27,10 @@ export default function Contact() {
 
       <MDBInput type='email' label='Email address' name="email" v-model='email' wrapperClass='mb-4' />
 
-      <MDBInput label='Job type' v-model='Mobile' name="job_type" wrapperClass='mb-4' />
 
-      <MDBTextArea wrapperClass='mb-4' name="details" label='Job details (location, date, rooms/items, access ...)' />
+      <MDBTextArea wrapperClass='mb-4' name="details" label='Job details (location, date, rooms, items, access)' />
 
-      <MDBInput label='Mobile' v-model='Mobile' name="mobile wrapperClass='mb-4' />
+      <MDBInput label='Mobile' v-model='Mobile' name="mobile" wrapperClass='mb-4' />
 
       <MDBBtn  color='primary' block className='my-4'>
         Send

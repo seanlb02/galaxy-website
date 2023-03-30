@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import CardGrid from '@/Components/CardGrid'
 import Footer from '@/Components/Footer' 
-import style from '../styles/Home.module.css'
+// import style from '../styles/Home.module.css'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,8 +30,15 @@ export default function Home() {
               <section className={styles.heroContainer}>
                 {/* <div className="relative w-[40vw] flex flex-col"> */}
                   <div className={styles.hero}>We handle the <span id="cycle"></span> <br></br>so <em>he</em> doesn&apos;t have to</div>
-                  <a href="/pricing#contact"><div className='bg-red-500 absolute z-40 mt-24 md:text-2xl xs:text-lg w-2/3 md:bottom-36 xs:bottom-20 text-white p-2 lg:p-6 cursor-pointer rounded-r-3xl'>Book removals</div></a>
-                  <a href="/pricing#contact"><div className='bg-red-500 absolute z-40 mt-24 md:text-2xl xs:text-lg w-2/3 md:bottom-14 xs:bottom-6 text-white p-2 lg:p-6  cursor-pointer rounded-r-3xl'>Book packing</div></a>
+                  <a href="/pricing">
+                      <div className='bg-blue-400 absolute z-40 mt-24 md:text-2xl xs:text-lg lg:w-1/3 w-2/5 md:bottom-24 xs:bottom-0 text-white flex p-2 lg:p-6 h-72 items-center align-center rounded-r-3xl'>
+                    
+                    
+                        <div className="curser-pointer">Removals | Storage | Packing | Interstate | Commercial</div>
+                        <div className="absolute text-slate-500 bg-white m-4 ml-12 bottom-0 px-12 lg:text-2xl text-center text-sm border-2 border-white rounded-full px-5">Get A Quote</div>
+                    
+                      </div>
+                  </a>
 
                 {/* </div> */}
                   
@@ -43,12 +50,12 @@ export default function Home() {
             <section className={styles.bio}>
             <div className={styles.experience}>100% owner-operated for almost 35 years </div>
             
-            <CardGrid className="p-4"/>
+            <CardGrid className="p-4 mb-8"/>
             
             </section>
-            <Container  className="p-0 m-0 flex flex-col mt-4" fluid xs={{ gutter: 0 }}>
+            <Container  className="p-8 m-0 flex flex-col mt-4" fluid xs={{ gutter: 0 }}>
                 <Row xs={{ gutter: 0 }}  noGutters={true} className="pr-0 gutter-x-0 flex-1 grow">
-                  <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-100 p-12">
+                  <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-50 p-12">
                       <div className={styles.sectionTitle}>House and apartment relocations</div>
                       <ul className={styles.sectionList}>
                         <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Residental moves of all sizes and complexities</li>
@@ -67,7 +74,7 @@ export default function Home() {
                 </Row>
 
                 <Row xs={{ gutter: 0 }} noGutters={true} className="d-flex flex-1 flex-row-reverse grow">
-                  <Col xs={12} md={6} className=" d-flex flex-col justify-center bg-yellow-100 p-12">
+                  <Col xs={12} md={6} className=" d-flex flex-col justify-center bg-yellow-50 p-12">
                       <div className={styles.sectionTitle}>Local self-storage <strong>experts</strong> </div>
                       <ul className={styles.sectionList}>
                         <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Short-term and long-term solutions</li>
@@ -85,7 +92,7 @@ export default function Home() {
                 </Row>
 
                 <Row lg={{ gutter: 0 }}  noGutters={true} className="flex-1 grow ">
-                  <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-100 p-12">
+                  <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-50 p-12">
                       <div className={styles.sectionTitle}>Office and warehouse relocations</div>
                       <ul className={styles.sectionList}>
                         <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Experienced in office moves of all sizes</li>
@@ -133,17 +140,17 @@ const styles = {
   heroContainer: "mt-20 h-contain w-contain ",
   dogImage: "w-full h-full z-0",
   hero: "font-serif hidden sm:block absolute text-2xl top-56 pl-9 md:text-3xl lg:text-5xl pl-5 md:left-6 lg:pl-6 lg:left-16 lg:top-72 ",
-  heroTab: " border-2 right-0 h-56 w-2/5 bg-blue-400 rounded-2xl",
+  heroTab: " border-2 right-0 h-72 w-2/5 bg-blue-400 rounded-2xl",
 
   bio: "",
-  experience: "font-serif flex items-center justify-center py-12 lg:pt-24 pt-12 pb-5 text-center text-2xl mx-5 lg:text-4xl word-wrap",
+  experience: "font-serif flex items-center py-18 mb-6 lg:pt-24 pt-12 pb-12 md:text-left text-center text-4xl lg:text-5xl mx-5 lg:text-4xl word-wrap",
 
   // storageContainer: " flex flex-col w-[100vw] h-full lg:flex-row bg-yellow-100",
   //   section: "flex flex-1 flex-col mt-12 text-left",
-      sectionTitle: "text-center text-2xl sm:text-3xl lg:text-4xl mb-12",
+      sectionTitle: "text-center text-3xl sm:text-3xl lg:text-4xl mb-12",
       sectionList: "text-m lg:text-xl text-left gap-4 justify-center align-center",
 
-    storeImage: "flex max-h-1/4 w-full object-contain ",
+    storeImage: "flex max-h-1/4 w-full object-cover   ",
     buttonContainer: "flex justify-center items-center w-full mt-12",
     imageButton: "bottom-20 left-56 w-fit p-2 rounded-2xl bg-green-400 border-2 border-white",
 

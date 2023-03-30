@@ -8,7 +8,7 @@ export default function Footer() {
       <section id="contact" className='d-flex justify-content-center  p-4 border-bottom'>
     
       <div className="flex justify-center lg:justify-center text-2xl gap-2 text-white">
-                <MDBIcon icon="phone" className="" /><Image height={25} width={25} src="/phonewhite.png"></Image>0404966779
+                <MDBIcon icon="phone" className="" /><Image height={25} width={25} src="/phonewhite.png"></Image>Call  0404966779
               </div>
       </section>
 
@@ -60,7 +60,7 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                Hillsdale, NSW 2035, SYDNEY
+                Alexandria, NSW 2015, SYDNEY
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />

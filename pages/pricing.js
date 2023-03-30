@@ -23,20 +23,24 @@ export default function Pricing() {
         <NavTab/>
         <div className={styles.pageContainer}>
             
-            <div className={styles.header}><strong>Pricing</strong> </div>
-        <section className={styles.quoteSection}>
-            
-
-            <div className={styles.quoteTitle}>Not sure about what you need?</div>
-            <div className={styles.quoteButton}><strong><a href="/pricing#contact">Get a free, in-person quote</a></strong></div>
-            <div id="rates" className={styles.quoteText}>We always prefer to come out and give quotes on larger or more complex jobs. Fill in the form below with some details about your job and a way for us to contact you.</div>
-
-        </section>
+            <div className={styles.header}><strong>Pricing Information</strong> </div>
+        
         <div className={styles.header2}>Our Rates </div>
         </div>
 
 <RatesGrid />
-<Contact/>
+    <div className="flex gap-10">
+        <section className={styles.quoteSection}>
+                    
+
+                    <div className={styles.quoteTitle}>Not sure about what you need?</div>
+                    <div className={styles.quoteButton}><strong><a href="/pricing#contact">Get a free, in-person quote</a></strong></div>
+                    <div id="rates" className={styles.quoteText}>Give us a call or fill in the form below with some details about your job and a way for us to contact you.</div>
+
+
+        </section>
+        <Contact/>
+    </div>
 <Footer/>
 
 
@@ -51,9 +55,9 @@ export default function Pricing() {
 const styles = {
     pageContainer: "mt-24 vh-[100vh] vw-[100vw]",
     header: "font-sans text-4xl p-12 pl-6 text-left md:pl-12",
-    header2: "text-3xl px-12 pb-2 pt-10 text-left ",
+    header2: "text-3xl px-12 pb-2 text-left ",
     quoteTitle: "text-3xl text-center px-12 sm:px-0",
     quoteText: "w-[60vw] text-center",
-    quoteSection: "flex gap-12 flex-col justify-center items-center",
+    quoteSection: "flex gap-12 flex-col w-1/2 justify-center items-center",
     quoteButton: "bg-blue-500 rounded-2xl border-4 border-yellow-100 text-white cursor-pointer p-3"
 }
