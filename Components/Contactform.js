@@ -17,10 +17,10 @@ export default function Contact() {
 // }
 
   return (
-      <div id="contact" className="flex bg-green-500 w-1/2 justify-center mt-12">
+      <div id="contact" className="flex  justify-center mt-4">
     <form id='form'  className='text-center mb-12 w-[80vw]' method="POST" action="https://api.web3forms.com/submit" >
       
-
+    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
       <input type="hidden" name="apikey" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/>
 
       <MDBInput label='Name' name="full_name" v-model='name' wrapperClass='mb-4' />

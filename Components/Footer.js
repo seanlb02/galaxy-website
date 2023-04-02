@@ -28,12 +28,12 @@ export default function Footer() {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Services</h6>
               <p>
-                <a href='#!' className='text-reset'>
-                  Houses and apartments
+                <a href='/pricing' className='text-reset'>
+                  Residential relocations
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/pricing' className='text-reset'>
                   Storage solutions
                 </a>
               </p>
@@ -43,12 +43,12 @@ export default function Footer() {
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/pricing' className='text-reset'>
                   Interstate relocations
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/pricing' className='text-reset'>
                   Packing 
                 </a>
               </p>

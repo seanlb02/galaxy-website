@@ -14,10 +14,12 @@
     "i": "^0.3.7",
     "mdb-react-ui-kit": "^5.1.0",
     "next": "13.1.6",
+    "next-seo": "^5.15.0",
     "npm": "^9.4.2",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
+    "react-scroll-motion": "^0.3.2",
     "sweetalert2": "^11.7.1"
   },
   "devDependencies": {

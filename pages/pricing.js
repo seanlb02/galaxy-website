@@ -29,7 +29,7 @@ export default function Pricing() {
         </div>
 
 <RatesGrid />
-    <div className="flex gap-10">
+    <div className="flex bg-blue-100 flex-col lg:flex items-center align-center w-full gap-10">
         <section className={styles.quoteSection}>
                     
 
@@ -43,7 +43,20 @@ export default function Pricing() {
     </div>
 <Footer/>
 
+{/* 
 
+<script src="https://www.google.com/recaptcha/api.js?render=6LcS_k4lAAAAAKNCQ2ElE_59866EK_1ekBSC_dbc"></script>
+{
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LcS_k4lAAAAAKNCQ2ElE_59866EK_1ekBSC_dbc', {
+                action: 'contact'
+            })
+            .then(function (token) {
+                recaptchaResponse.value = token;
+            });
+    });
+    
+} */}
         </>
 
     )
@@ -56,8 +69,8 @@ const styles = {
     pageContainer: "mt-24 vh-[100vh] vw-[100vw]",
     header: "font-sans text-4xl p-12 pl-6 text-left md:pl-12",
     header2: "text-3xl px-12 pb-2 text-left ",
-    quoteTitle: "text-3xl text-center px-12 sm:px-0",
-    quoteText: "w-[60vw] text-center",
-    quoteSection: "flex gap-12 flex-col w-1/2 justify-center items-center",
+    quoteTitle: "text-3xl text-center px-0 lg:px-12 sm:px-0",
+    quoteText: " px-3 lg:px-12 text-center",
+    quoteSection: "flex gap-12 pt-16 flex-col lg:w-1/2 w-full justify-center items-center",
     quoteButton: "bg-blue-500 rounded-2xl border-4 border-yellow-100 text-white cursor-pointer p-3"
 }

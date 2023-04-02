@@ -24,5 +24,8 @@ theme: {
     backgroundImage: {
       // 'storage': "url('../public/storage.png')",
     },
+    fontFamily: {
+      'gudea': ['Gudea', 'sans-serif']
+    },
  
   }}}

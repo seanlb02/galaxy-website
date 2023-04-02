@@ -3,7 +3,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 function RatesGrid() {
   return (
-    <CardGroup className="p-12 pb-10 gap-3">
+    <CardGroup className="font-gudea p-12 pb-10 gap-3">
       <Card className="shadow">
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
         <Card.Body>
@@ -13,7 +13,7 @@ function RatesGrid() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.cardFooter}>
-        <button><a href="/pricing#contact"><strong>Book Now</strong></a></button>
+        <button><a href="/pricing#contact"><strong>Get quote</strong></a></button>
         </Card.Footer>
       </Card>
       <Card className="shadow">
@@ -25,7 +25,7 @@ function RatesGrid() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.cardFooter}>
-        <button><a href="/pricing#contact"><strong>Book Now</strong></a></button>
+        <button><a href="/pricing#contact"><strong>Get quote</strong></a></button>
         </Card.Footer>
       </Card>
       <Card className="shadow">
@@ -37,7 +37,7 @@ function RatesGrid() {
           </Card.Text>
         </Card.Body>
         <Card.Footer id="contact"  className={styles.cardFooter}>
-        <button><a href="/pricing#contact"><strong>Book Now</strong></a></button>
+        <button><a href="/pricing#contact"><strong>Get quote</strong></a></button>
         </Card.Footer>
       </Card>
     </CardGroup>
