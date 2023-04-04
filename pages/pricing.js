@@ -25,16 +25,16 @@ export default function Pricing() {
             
             <div className={styles.header}><strong>Pricing Information</strong> </div>
         
-        <div className={styles.header2}>Our Rates </div>
+        <div className={styles.header2}>What we offer</div>
         </div>
 
 <RatesGrid />
-    <div className="flex bg-blue-100 flex-col lg:flex items-center align-center w-full gap-10">
+    <div className="flex bg-blue-100 flex-col lg:flex items-center align-center w-full gap-10 rounded-r-full">
         <section className={styles.quoteSection}>
                     
 
                     <div className={styles.quoteTitle}>Not sure about what you need?</div>
-                    <div className={styles.quoteButton}><strong><a href="/pricing#contact">Get a free, in-person quote</a></strong></div>
+                    <div className={styles.quoteButton}><Image src="/phonewhite.png" width={20} height={20}></Image>Call 0404966779</div>
                     <div id="rates" className={styles.quoteText}>Give us a call or fill in the form below with some details about your job and a way for us to contact you.</div>
 
 
@@ -66,11 +66,11 @@ export default function Pricing() {
 }
 
 const styles = {
-    pageContainer: "mt-24 vh-[100vh] vw-[100vw]",
+    pageContainer: "font-gauda mt-24 vh-[100vh] vw-[100vw]",
     header: "font-sans text-4xl p-12 pl-6 text-left md:pl-12",
     header2: "text-3xl px-12 pb-2 text-left ",
     quoteTitle: "text-3xl text-center px-0 lg:px-12 sm:px-0",
     quoteText: " px-3 lg:px-12 text-center",
     quoteSection: "flex gap-12 pt-16 flex-col lg:w-1/2 w-full justify-center items-center",
-    quoteButton: "bg-blue-500 rounded-2xl border-4 border-yellow-100 text-white cursor-pointer p-3"
+    quoteButton: "flex gap-2 bg-blue-500 rounded-2xl border-4 border-yellow-50 text-white cursor-pointer p-3"
 }

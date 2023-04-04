@@ -3,8 +3,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 function GroupExample() {
   return (
-    <CardGroup className="font-gudea p-12 pt-0 lg:mb-5 mb-0 gap-4">
-      <Card className="shadow">
+    <CardGroup className="font-gudea lg:p-12 xs:p-8 pt-0 lg:mb-5 mb-0 gap-4">
+      <Card className="shadow" >
         <Card.Img variant="top" src="/openhouse.jpg" height="160px" width="100px"/>
         <Card.Body>
           <Card.Title>Declutter to sell</Card.Title>
