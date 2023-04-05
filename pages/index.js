@@ -10,15 +10,15 @@ import CardGrid from '@/Components/CardGrid'
 import Footer from '@/Components/Footer' 
 // import style from '../styles/Home.module.css'
 
-import dynamic from "next/dynamic";
-const Animator = dynamic(
-  import("react-scroll-motion").then((it) => it.Animator),
-  { ssr: false }
-);
+// import dynamic from "next/dynamic";
+// const Animator = dynamic(
+//   import("react-scroll-motion").then((it) => it.Animator),
+//   { ssr: false }
+// );
 
 
 
-import { ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+// import { ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import { NextSeo } from 'next-seo';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,8 +26,12 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
+    <Head>
+      <link rel="icon" href='/iconlogo.svg'/>
+    </Head>
       <NextSeo
         title="Galaxy Removals Sydney"
+        
         // name="viewport" content="width=device-width, initial-scale=1"
         // {/* <link rel="icon" href="/favicon.ico" />
         // <link href="../styles/Home.module.css" rel="stylesheet"/> */}
@@ -57,7 +61,7 @@ export default function Home() {
                   
                 
 
-                  <div><Image className={styles.dogImage} height={2800} width={4000} src="/dogHero.jpg"></Image></div>
+                  <div><Image className={styles.dogImage} alt="Dog standing in a moving box" height={2800} width={4000} src="/dogHero.jpg"></Image></div>
               </section>
             </div>
             {/* <ScrollContainer>
@@ -78,16 +82,16 @@ export default function Home() {
                   <Col xs={12} md={6} className="d-flex flex-col h-96 justify-center bg-blue-50 p-8">
                       <div className={styles.sectionTitle}>House and apartment relocations</div>
                       <ul className={styles.sectionList}>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Residental moves of all sizes and complexities</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Free box rental</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Difficult access consultation</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Range of rates avaliable</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Residental moves of all sizes and complexities</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Free box rental</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Difficult access consultation</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Range of rates avaliable</li>
                       </ul>
                       <div className={styles.buttonContainer}>
                       </div>
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
-                    <Image className={styles.storeImage} height={200} width={400} src="/openbox.jpg"></Image>
+                    <Image className={styles.storeImage} alt="open boxes" height={200} width={400} src="/openbox.jpg"></Image>
                     <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/pricing#rates">Check our rates</a></div>
                   </Col>
                 </Row>
@@ -96,16 +100,16 @@ export default function Home() {
                   <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 bg-yellow-50 p-8">
                       <div className={styles.sectionTitle}>Local self-storage <strong>experts</strong> </div>
                       <ul className={styles.sectionList}>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Short-term and long-term solutions</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>7-day-a-week access</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>All sized units avaliable</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>All move-in logistics handled by us</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Short-term and long-term solutions</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>7-day-a-week access</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>All sized units avaliable</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>All move-in logistics handled by us</li>
                       </ul>
                       <div className={styles.buttonContainer}>
                       </div>
                   </Col>
                   <Col xs={12} md={6} className="px-0 z-1 relative">
-                    <Image className={styles.storeImage} height={200} width={400} src="/storage.jpg"></Image>
+                    <Image className={styles.storeImage} alt="self-storage units" height={200} width={400} src="/storage.jpg"></Image>
                     <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/pricing#rates">See storage options</a></div>
 
                   </Col>
@@ -115,16 +119,16 @@ export default function Home() {
                   <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-50 h-96 p-8">
                       <div className={styles.sectionTitle}>Office and warehouse relocations</div>
                       <ul className={styles.sectionList}>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Experienced in office moves of all sizes</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Small warehouse relocations and logistics</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Hard access consultation</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Call to organise a free quote</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Experienced in office moves of all sizes</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Small warehouse relocations and logistics</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Hard access consultation</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Call to organise a free quote</li>
                       </ul>
                       <div className={styles.buttonContainer}>
                       </div>
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
-                    <Image className={styles.storeImage} height={200} width={400} src="/office.jpg"></Image>
+                    <Image className={styles.storeImage} alt="office space" height={200} width={400} src="/office.jpg"></Image>
                   <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5 text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/pricing#rates">Get office quote</a></div>
                   </Col>
                 </Row>
@@ -133,15 +137,15 @@ export default function Home() {
                   <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 bg-yellow-50 p-8">
                       <div className={styles.sectionTitle}>Packing and unpacking</div>
                       <ul className={styles.sectionList}>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Either full house or last minute bits</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>Standard rates</li>
-                        <li className="flex gap-3 align-center items-center"><Image height={40} width={40} src="/tick.png"></Image>All returnable materials and boxes supplied Free</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Either full house or last minute bits</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Standard rates</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>All returnable materials and boxes supplied Free</li>
                       </ul>
                       <div className={styles.buttonContainer}>
                       </div>
                   </Col>
                   <Col xs={12} md={6}  className="px-0 relative">
-                    <Image className={styles.storeImage} height={200} width={400} src="/packing.jpg"></Image>
+                    <Image className={styles.storeImage} alt="person packing boxes" height={200} width={400} src="/packing.jpg"></Image>
                     <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/pricing#rates">Book packing</a></div>
 
                   </Col>

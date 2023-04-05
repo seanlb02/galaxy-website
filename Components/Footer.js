@@ -8,7 +8,7 @@ export default function Footer() {
       <section id="contact" className='d-flex justify-content-center  p-4 border-bottom'>
     
       <div className="flex justify-center lg:justify-center text-2xl gap-2 text-white">
-                <MDBIcon icon="phone" className="" /><Image height={25} width={25} src="/phonewhite.png"></Image>Call  0404966779
+                <MDBIcon icon="phone" className="" /><Image alt="phone icon" height={25} width={25} src="/phonewhite.png"></Image>Call  0404966779
               </div>
       </section>
 
@@ -28,29 +28,19 @@ export default function Footer() {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Services</h6>
               <p>
-                <a href='/pricing' className='text-reset'>
                   Residential relocations
-                </a>
               </p>
               <p>
-                <a href='/pricing' className='text-reset'>
                   Storage solutions
-                </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
                   Office moves
-                </a>
               </p>
               <p>
-                <a href='/pricing' className='text-reset'>
                   Interstate relocations
-                </a>
               </p>
               <p>
-                <a href='/pricing' className='text-reset'>
                   Packing 
-                </a>
               </p>
             </MDBCol>
 
@@ -62,10 +52,7 @@ export default function Footer() {
                 <MDBIcon icon="home" className="me-2" />
                 Alexandria, NSW 2015, SYDNEY
               </p>
-              <p>
-                <MDBIcon icon="envelope" className="me-3" />
-                galaxyremovals@myoffice.net.au
-              </p>
+              
               
               
             </MDBCol>

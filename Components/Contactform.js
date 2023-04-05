@@ -1,6 +1,7 @@
      
 import Script from 'next/script';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import { MDBInput, MDBTextArea, MDBCheckbox, MDBBtn } from 'mdb-react-ui-kit';
 import Swal from 'sweetalert2'
 import ReCAPTCHA from "react-google-recaptcha";
@@ -9,7 +10,21 @@ import Recaptcha from 'react-google-recaptcha/lib/recaptcha';
 export default function Contact() {
 
   const recaptchaRef = React.createRef();
+  const [disable, setDisable] = useState(false);
+  const [captchaValue, SetCaptchaValue] =useState("");
 
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    SetCaptchaValue(value)
+  }
+
+  useEffect( () => {
+
+ 
+  if (captchaValue !== ""){
+    setDisable(true);
+  }
+}, [captchaValue])
 
   return (
 
@@ -22,16 +37,16 @@ export default function Contact() {
 
 
     
-    <form id='form'  className='text-center justify-center mb-12 w-[80vw]' method="POST" action="https://api.web3forms.com/submit" >
+    <form id='form'  className='text-center justify-center mb-12 w-[80vw]' method="POST" action="https://mailthis.to/info@galaxyrelocations.com" >
     
 	  
     {/* <input type="hidden" name="recaptcha_response" id="recaptchaResponse"/> */}
-      <input type="hidden" name="apikey" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/>
+      {/* <input type="hidden" name="apikey" value="a1b9b123-ed95-4e08-a5bf-a214085534a1"/> */}
       <input type="hidden" name="recaptcha_response" id="recaptchaResponse"></input>
-
+      <input type="hidden" name="_honeypot"></input>
       <MDBInput label='Name' name="full_name" v-model='name' wrapperClass='mb-4' />
 
-      <MDBInput type='email' label='Email address' name="email" v-model='email' wrapperClass='mb-4' />
+      <MDBInput type='email' label='Email address' name="_replyto" v-model='email' wrapperClass='mb-4' />
 
      
 
@@ -49,10 +64,11 @@ export default function Contact() {
       <MDBInput label='Mobile' v-model='Mobile' name="mobile" wrapperClass='mb-4' />
       <ReCAPTCHA sitekey="6LdE91clAAAAAIm4OUdhD1P9z9iJ_Lc6n7RUiLOY"
                 secretkey="6LdE91clAAAAALN5PFZj1hS_zgGZ72XnhBHEjdJa"
+                onChange={onChange}
       />
-      <MDBBtn  color='primary' block className='my-4'>
+      {disable ? <MDBBtn color='primary' block className='my-4'>
         Send
-      </MDBBtn>
+      </MDBBtn> : <></>}
     </form>
     </div>
   );

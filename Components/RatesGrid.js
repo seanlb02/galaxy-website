@@ -19,7 +19,7 @@ function RatesGrid() {
       <Card className="shadow">
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
         <Card.Body>
-          <Card.Title>Three Removalists with Truck <em>(Reccomended)</em></Card.Title>
+          <Card.Title>Three Removalists with Truck <em>(Recommended)</em></Card.Title>
           <Card.Text>
             Adding just one extra removalist doubles the speed of the vast majority of jobs, meaning you get settled in sooner without paying double.
           </Card.Text>
