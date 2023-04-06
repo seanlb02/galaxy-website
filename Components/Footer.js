@@ -21,7 +21,7 @@ export default function Footer() {
                 Galaxy Removals 
               </h6>
               <p>
-                35 Years experience operating all across Sydney with a focus on the Eastern and Northern suburbs.
+                35 Years experience operating all across the Sydney Metro. 
               </p>
             </MDBCol>
 

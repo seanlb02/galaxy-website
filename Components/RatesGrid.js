@@ -9,11 +9,11 @@ function RatesGrid() {
         <Card.Body>
           <Card.Title>Two Removalists with Truck</Card.Title>
           <Card.Text>
-            We tend to only take out two removalists for small relocation or storage jobs. 
+            We tend to only use two removalists for small relocation jobs. 
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.cardFooter}>
-        <button><a href="/pricing#contact"><strong>Get quote</strong></a></button>
+        <button><a href="/#contact"><strong>Inquire Now</strong></a></button>
         </Card.Footer>
       </Card>
       <Card className="shadow">
@@ -25,19 +25,19 @@ function RatesGrid() {
           </Card.Text>
         </Card.Body>
         <Card.Footer className={styles.cardFooter}>
-        <button><a href="/pricing#contact"><strong>Get quote</strong></a></button>
+        <button><a href="/#contact"><strong>Inquire Now</strong></a></button>
         </Card.Footer>
       </Card>
       <Card className="shadow">
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
         <Card.Body>
-          <Card.Title>Four removalists and a truck</Card.Title>
+          <Card.Title>Four removalists and a Truck</Card.Title>
           <Card.Text>
             For large or time critical residential and commercial jobs we take 4 removalists 
           </Card.Text>
         </Card.Body>
         <Card.Footer id="contact"  className={styles.cardFooter}>
-        <button><a href="/pricing#contact"><strong>Get quote</strong></a></button>
+        <button><a href="/#contact"><strong>Inquire Now</strong></a></button>
         </Card.Footer>
       </Card>
     </CardGroup>

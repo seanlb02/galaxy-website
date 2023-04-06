@@ -9,11 +9,11 @@ function GroupExample() {
         <Card.Body>
           <Card.Title>Declutter to sell</Card.Title>
           <Card.Text>
-            We specialise in short-term relocation/storage packages for people prepparing to sell. 
+            We specialise in short-term relocation/storage packages for people preparing to sell. 
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-            <a href='/pricing#contact'><button>Learn More</button></a>
+            <a href='/pricing#contact'><button>Enquire Now</button></a>
         </Card.Footer>
       </Card>
       <Card className="shadow">
@@ -21,12 +21,12 @@ function GroupExample() {
         <Card.Body>
           <Card.Title>Interstate relocation</Card.Title>
           <Card.Text>
-            We offer regional and inter-state relocation services with the ability to achieve next day delivery in many cases.
+            We offer regional and inter-state relocation services with the ability to achieve next day delivery.
             What's more, the team that packs your items will be there for delivery.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <a href='/pricing#contact'><button>Learn More</button></a>
+        <a href='/pricing#contact'><button>Enquire Now</button></a>
         </Card.Footer>
       </Card>
       <Card className="shadow">
@@ -40,7 +40,7 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer id="services">
-        <a href='/pricing#contact'><button>Learn More</button></a>
+        <a href='/pricing#contact'><button>Enquire Now</button></a>
         </Card.Footer>
       </Card>
     </CardGroup>

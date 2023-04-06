@@ -18,9 +18,9 @@ export default function NavTab() {
           <Nav.Link className={styles.itemfonts}><Image height={25} width={25} alt="phone icon" src="/phone.png"></Image>02 9664 6641</Nav.Link>
 
             <Nav.Link className={styles.itemfonts} href="/">Home</Nav.Link>
-            <Nav.Link className={styles.itemfonts} href="/pricing#contact">Contact</Nav.Link>
+            <Nav.Link className={styles.itemfonts} href="/#contact">Contact</Nav.Link>
             <Nav.Link className={styles.itemfonts} href="/#services">What we do</Nav.Link>
-            <Nav.Link className={styles.itemfonts} href="/pricing">Pricing</Nav.Link>
+            <Nav.Link className={styles.itemfonts} href="/#pricing">Pricing</Nav.Link>
 
           </Nav>
 
