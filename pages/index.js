@@ -54,7 +54,7 @@ export default function Home() {
                         <div className="curser-pointer text-2xl md:text-3xl lg:text-4xl font-serif text-white-600 md:mt-8 lg:mt-16 ">Removals | Storage | Packing | Interstate | Commercial</div>
                         <div className="flex absolute text-white-500 m-3 ml-12 bottom-0 lg:px-12 px-1 lg:text-2xl text-md text-center cursor-pointer lg:visible -left-0 md:left-0 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full px-0 text-md font-gudea "><Image height={25} width={25} src="/phonewhite.png"></Image>02 9664 6641</div>
 
-                        <div className="absolute border-2 text-slate-500 bg-white m-3 ml-14 bottom-0 lg:px-18 px-3 lg:text-2xl text-md text-center cursor-pointer left-56 md:left-64 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full  text-md font-gudea ">Get A Quote</div>
+                        <div className="absolute border-2 text-slate-500 bg-white xs:m-2 ml-12 mb-3 bottom-0 lg:px-18 px-2 w-auto lg:text-2xl text-md text-center cursor-pointer left-56 md:left-64 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full  text-md font-gudea ">Get A Quote</div>
                     
                       </div>
                   
@@ -79,9 +79,9 @@ export default function Home() {
             </section>
             {/* </ScrollPage>
             </ScrollContainer> */}
-            <Container  className="lg:p-12 xs:p-6 m-0 flex flex-col mt-4 " fluid xs={{ gutter: 0 }}>
-                <Row xs={{ gutter: 0 }}  noGutters={true} className="pr-0 mb-4 gutter-x-0 flex-1 grow">
-                  <Col xs={12} md={6} className="xs:rounded-t-3xl lg:rounded-tl-3xl d-flex flex-col h-96 justify-center bg-blue-50 p-8">
+            <Container  className="lg:p-12 xs:p-6 m-0 rounded-3xl flex flex-col mt-4 " fluid xs={{ gutter: 0 }}>
+                <Row xs={{ gutter: 0 }}  noGutters={true} className="pr-0 mb-5 gutter-x-0 flex-1 grow">
+                  <Col xs={12} md={6} className=" d-flex flex-col h-96 justify-center bg-blue-50 p-8">
                       <div className={styles.sectionTitle}>House & Apartment Relocations</div>
                       <ul className={styles.sectionList}>
                         <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Residental moves of all sizes </li>
@@ -93,7 +93,7 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
                     <Image className={styles.storeImage} alt="open boxes" height={200} width={400} src="/openbox.jpg"></Image>
-                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/pricing#rates">Check our rates</a></div>
+                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/#pricing">Check our rates</a></div>
                   </Col>
                 </Row>
 
@@ -111,7 +111,7 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6} className="px-0 z-1 relative">
                     <Image className={styles.storeImage} alt="self-storage units" height={200} width={400} src="/storage.jpg"></Image>
-                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/pricing#rates">See storage options</a></div>
+                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/#contact">Inquire about storage</a></div>
 
                   </Col>
                 </Row>
@@ -122,7 +122,7 @@ export default function Home() {
                       <ul className={styles.sectionList}>
                         <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Experienced in office moves of all sizes</li>
                         <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Small warehouse relocations and logistics</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Hard access consultation</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Difficult access consultation</li>
                         <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Call to organise a free quote</li>
                       </ul>
                       <div className={styles.buttonContainer}>
@@ -130,7 +130,7 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
                     <Image className={styles.storeImage} alt="office space" height={200} width={400} src="/office.jpg"></Image>
-                  <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5 text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/pricing#rates">Get office quote</a></div>
+                  <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5 text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/#contact">Get office quote</a></div>
                   </Col>
                 </Row>
 
@@ -139,9 +139,9 @@ export default function Home() {
                       <div className={styles.sectionTitle}>Packing & Unpacking</div>
                       <ul className={styles.sectionList}>
                         <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Either full house or last minute bits</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Standard rates</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Standard rates apply</li>
                         <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Free boxes, paper & tape rental</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Port-a-robes provided on moving day</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Port-a-robes provided Free on moving day</li>
 
                       </ul>
                       <div className={styles.buttonContainer}>
@@ -149,7 +149,7 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6}  className="px-0 relative">
                     <Image className={styles.storeImage} alt="person packing boxes" height={200} width={400} src="/packing.jpg"></Image>
-                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/pricing#rates">Book packing</a></div>
+                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/#contact">Let's talk packing</a></div>
 
                   </Col>
                 </Row>
@@ -161,7 +161,7 @@ export default function Home() {
             <CardGrid className="p-4 mb-8"/>
             </section >
 
-            <div id="pricing" className={styles.header}><strong>Pricing Information</strong> </div>
+            <div id="pricing" className={styles.header}>Pricing Information</div>
         
             <div className={styles.header2}>What we offer</div>
             
@@ -173,7 +173,7 @@ export default function Home() {
 
                     <div className={styles.quoteTitle}>Not sure about what you need?</div>
                     <div className={styles.quoteButton}><Image src="/phonewhite.png" alt="phone icon" width={20} height={20}></Image>Call 0404966779</div>
-                    <div id="rates" className={styles.quoteText}>Give us a call or complete the form below</div>
+                    <div id="rates" className={styles.quoteText}>Give us a call or complete the form below and we will get back to you as soon as possible</div>
             
 
         </section>
@@ -217,7 +217,7 @@ const styles = {
     buttonContainer: "flex justify-center items-center w-full mt-8",
     imageButton: "font-gudea bottom-20 left-56 w-fit p-2 rounded-2xl bg-blue-400 text-white ",
 
-    header: "font-sans text-4xl p-12 pl-6 text-left md:pl-12",
+    header: "font-serif text-4xl p-12 pl-6 text-left md:pl-12",
     header2: "text-3xl px-12 pb-2 text-left ",
     quoteTitle: "text-3xl text-center px-0 lg:px-12 sm:px-0",
     quoteText: " px-3 lg:px-12 text-center",

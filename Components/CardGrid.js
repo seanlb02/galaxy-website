@@ -13,7 +13,7 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-            <a href='/pricing#contact'><button>Enquire Now</button></a>
+            <a href='/pricing#contact'><button>Inquire Now</button></a>
         </Card.Footer>
       </Card>
       <Card className="shadow">
@@ -22,11 +22,11 @@ function GroupExample() {
           <Card.Title>Interstate relocation</Card.Title>
           <Card.Text>
             We offer regional and inter-state relocation services with the ability to achieve next day delivery.
-            What's more, the team that packs your items will be there for delivery.
+            What's more, the team that packs your items will be there for the offload.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <a href='/pricing#contact'><button>Enquire Now</button></a>
+        <a href='/pricing#contact'><button>Inquire Now</button></a>
         </Card.Footer>
       </Card>
       <Card className="shadow">
@@ -40,7 +40,7 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer id="services">
-        <a href='/pricing#contact'><button>Enquire Now</button></a>
+        <a href='/pricing#contact'><button>Inquire Now</button></a>
         </Card.Footer>
       </Card>
     </CardGroup>
