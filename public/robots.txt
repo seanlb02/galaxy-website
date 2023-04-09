@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.galaxyrelocations.com/
+
+# Sitemaps
+Sitemap: https://www.galaxyrelocations.com/sitemap.xml

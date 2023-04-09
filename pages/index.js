@@ -11,6 +11,8 @@ import Footer from '@/Components/Footer'
 // import style from '../styles/Home.module.css'
 import RatesGrid from '@/Components/RatesGrid'
 import Contact from '@/Components/Contactform';
+import Reveal from 'react-reveal/Reveal';
+import Fade from 'react-reveal/Fade';
 
 // import dynamic from "next/dynamic";
 // const Animator = dynamic(
@@ -32,8 +34,8 @@ export default function Home() {
       <link rel="icon" href='/iconlogo.svg'/>
     </Head>
       <NextSeo
-        title="Galaxy Removals Sydney"
-        
+        title="Galaxy Relocations Sydney | Removals, Storage, Packing, Interstate"
+        description="Over 30 years of operation across the Sydney metro. Trusted experts in residential and commercial moves, packing, storage and interstate. Get a free quote today."
         // name="viewport" content="width=device-width, initial-scale=1"
         // {/* <link rel="icon" href="/favicon.ico" />
         // <link href="../styles/Home.module.css" rel="stylesheet"/> */}
@@ -54,7 +56,7 @@ export default function Home() {
                         <div className="curser-pointer text-2xl md:text-3xl lg:text-4xl font-serif text-white-600 md:mt-8 lg:mt-16 ">Removals | Storage | Packing | Interstate | Commercial</div>
                         <div className="flex absolute text-white-500 m-3 ml-12 bottom-0 lg:px-12 px-1 lg:text-2xl text-md text-center cursor-pointer lg:visible -left-0 md:left-0 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full px-0 text-md font-gudea "><Image height={25} width={25} src="/phonewhite.png"></Image>02 9664 6641</div>
 
-                        <div className="absolute border-2 text-slate-500 bg-white xs:m-2 ml-12 mb-3 bottom-0 lg:px-18 px-2 w-auto lg:text-2xl text-md text-center cursor-pointer left-56 md:left-64 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full  text-md font-gudea ">Get A Quote</div>
+                        <div className="absolute border-2 text-slate-500 bg-white xs:m-2 lg:ml-12 xs:ml-5 mb-3 bottom-0 lg:w-auto lg:px-16 px-2 xs:h-auto lg:text-2xl text-md text-center cursor-pointer right-10 md:left-64 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full  text-md font-gudea ">Get A Quote</div>
                     
                       </div>
                   
@@ -71,6 +73,7 @@ export default function Home() {
             <section className={styles.bio}>
             
               {/* <Animator animation={batch(FadeIn(), Move(), Sticky())}> */}
+
                   <div id="exp" className={styles.experience}>100% owner-operated for over 30 years </div>
               {/* </Animator> */}
 
@@ -79,17 +82,20 @@ export default function Home() {
             </section>
             {/* </ScrollPage>
             </ScrollContainer> */}
+            
             <Container  className="lg:p-12 xs:p-6 m-0 rounded-3xl flex flex-col mt-4 " fluid xs={{ gutter: 0 }}>
                 <Row xs={{ gutter: 0 }}  noGutters={true} className="pr-0 mb-5 gutter-x-0 flex-1 grow">
                   <Col xs={12} md={6} className=" d-flex flex-col h-96 justify-center bg-blue-50 p-8">
+                    <Fade bottom>
                       <div className={styles.sectionTitle}>House & Apartment Relocations</div>
                       <ul className={styles.sectionList}>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Residental moves of all sizes </li>
-                         <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Difficult access consultation</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Range of rates avaliable</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>Residental moves of all sizes </li>
+                         <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>Difficult access consultation</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>Range of rates avaliable</li>
                       </ul>
                       <div className={styles.buttonContainer}>
                       </div>
+                    </Fade>
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
                     <Image className={styles.storeImage} alt="open boxes" height={200} width={400} src="/openbox.jpg"></Image>
@@ -99,15 +105,17 @@ export default function Home() {
 
                 <Row xs={{ gutter: 0 }} noGutters={true} className="d-flex flex-1  mb-4 flex-row-reverse grow">
                   <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 bg-yellow-50 p-8">
+                    <Fade bottom>
                       <div className={styles.sectionTitle}>Local self-storage <strong>experts</strong> </div>
                       <ul className={styles.sectionList}>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Short-term and long-term solutions</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>7-day-a-week access</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>All sized units avaliable</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>All move-in logistics handled by us</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>Short-term and long-term solutions</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>7-day-a-week access</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>All sized units avaliable</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>All move-in logistics handled by us</li>
                       </ul>
                       <div className={styles.buttonContainer}>
                       </div>
+                    </Fade>
                   </Col>
                   <Col xs={12} md={6} className="px-0 z-1 relative">
                     <Image className={styles.storeImage} alt="self-storage units" height={200} width={400} src="/storage.jpg"></Image>
@@ -118,15 +126,17 @@ export default function Home() {
 
                 <Row lg={{ gutter: 0 }}  noGutters={true} className=" flex-1  mb-4 grow ">
                   <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-50 h-96 p-8">
+                  <Fade bottom>
                       <div className={styles.sectionTitle}>Office & Warehouse Relocations</div>
                       <ul className={styles.sectionList}>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Experienced in office moves of all sizes</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Small warehouse relocations and logistics</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Difficult access consultation</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Call to organise a free quote</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>Office moves of all sizes</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>Small warehouse relocations</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>Difficult access consultation</li>
+                        <li className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image>Call to organise a free quote</li>
                       </ul>
                       <div className={styles.buttonContainer}>
                       </div>
+                  </Fade>
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
                     <Image className={styles.storeImage} alt="office space" height={200} width={400} src="/office.jpg"></Image>
@@ -135,15 +145,17 @@ export default function Home() {
                 </Row>
 
                 <Row xs={{ gutter: 0 }} noGutters={true}  className=" rounded-3xl d-flex flex-row-reverse flex-1 grow">
-                  <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 bg-yellow-50 p-8">
+                  <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 bg-yellow-50 p-6">
+                    <Fade bottom>
                       <div className={styles.sectionTitle}>Packing & Unpacking</div>
                       <ul className={styles.sectionList}>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Either full house or last minute bits</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Standard rates apply</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Free boxes, paper & tape rental</li>
-                        <li className="flex gap-3 align-center items-center"><Image alt="tick" height={40} width={40} src="/tick.png"></Image>Port-a-robes provided Free on moving day</li>
+                        <div className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image><li className="flex gap-3 align-center items-center">Either full house or last minute bits</li></div>
+                        <div className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image><li className="flex gap-3 align-center items-center">Standard rates apply</li></div>
+                        <div className="flex gap-3 align-center items-center"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image><li className="flex gap-3 align-center items-center">Free boxes, paper & tape rental</li></div>
+                        <div className="flex gap-3 align-center items-center w-full"><Image alt="tick" className={styles.tick} height={40} width={40} src="/tick.png"></Image><div>Port-a-robes provided on moving day</div></div>
 
                       </ul>
+                       </Fade>
                       <div className={styles.buttonContainer}>
                       </div>
                   </Col>
@@ -155,16 +167,15 @@ export default function Home() {
                 </Row>
 
             </Container>
+           
+
             <section className="bg-yellow-100 rounded-l-full">
             <div id="exp" className={styles.experience2}>Special Packages</div>
 
             <CardGrid className="p-4 mb-8"/>
             </section >
 
-            <div id="pricing" className={styles.header}>Pricing Information</div>
-        
-            <div className={styles.header2}>What we offer</div>
-            
+            <div id="pricing" className={styles.header}>Pricing Information</div>            
 
             <RatesGrid />
               <div className="flex bg-blue-100 flex-col lg:flex items-center align-center w-full gap-10 rounded-r-full">
@@ -216,8 +227,8 @@ const styles = {
     storeImage: "flex md:h-96 xs:h-56 w-full object-cover   ",
     buttonContainer: "flex justify-center items-center w-full mt-8",
     imageButton: "font-gudea bottom-20 left-56 w-fit p-2 rounded-2xl bg-blue-400 text-white ",
-
-    header: "font-serif text-4xl p-12 pl-6 text-left md:pl-12",
+  tick: "min-w-40px min-h-40px",
+    header: "font-serif text-4xl p-12 pl-6 pb-2 text-left md:pl-12",
     header2: "text-3xl px-12 pb-2 text-left ",
     quoteTitle: "text-3xl text-center px-0 lg:px-12 sm:px-0",
     quoteText: " px-3 lg:px-12 text-center",
