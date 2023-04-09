@@ -83,9 +83,9 @@ export default function Home() {
             {/* </ScrollPage>
             </ScrollContainer> */}
             
-            <Container  className="lg:p-12 xs:p-6 m-0 rounded-3xl flex flex-col mt-4 " fluid xs={{ gutter: 0 }}>
+            <Container  className="lg:p-10 font-serif xs:p-0 m-0 rounded-t-3xl flex flex-col mt-4 " fluid xs={{ gutter: 0 }}>
                 <Row xs={{ gutter: 0 }}  noGutters={true} className="pr-0 mb-5 gutter-x-0 flex-1 grow">
-                  <Col xs={12} md={6} className=" d-flex flex-col h-96 justify-center bg-blue-50 p-8">
+                  <Col xs={12} md={6} className=" d-flex flex-col h-96 justify-center xs:bg-blue-50 lg:bg-white p-8">
                     <Fade bottom>
                       <div className={styles.sectionTitle}>House & Apartment Relocations</div>
                       <ul className={styles.sectionList}>
@@ -99,12 +99,12 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
                     <Image className={styles.storeImage} alt="open boxes" height={200} width={400} src="/openbox.jpg"></Image>
-                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/#pricing">Check our rates</a></div>
+                    <div className='bg-blue-500 z-40 font-gudea absolute md:top-10 xs:top-5  text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/#pricing">Check our rates</a></div>
                   </Col>
                 </Row>
 
                 <Row xs={{ gutter: 0 }} noGutters={true} className="d-flex flex-1  mb-4 flex-row-reverse grow">
-                  <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 bg-yellow-50 p-8">
+                  <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 xs:bg-yellow-50 lg:bg-white p-8">
                     <Fade bottom>
                       <div className={styles.sectionTitle}>Local self-storage <strong>experts</strong> </div>
                       <ul className={styles.sectionList}>
@@ -119,13 +119,13 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6} className="px-0 z-1 relative">
                     <Image className={styles.storeImage} alt="self-storage units" height={200} width={400} src="/storage.jpg"></Image>
-                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/#contact">Inquire about storage</a></div>
+                    <div className='bg-blue-500 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/#contact">Inquire about storage</a></div>
 
                   </Col>
                 </Row>
 
                 <Row lg={{ gutter: 0 }}  noGutters={true} className=" flex-1  mb-4 grow ">
-                  <Col xs={12} md={6} className="d-flex flex-col justify-center bg-blue-50 h-96 p-8">
+                  <Col xs={12} md={6} className="d-flex flex-col justify-center xs:bg-blue-50 lg:bg-white h-96 p-8">
                   <Fade bottom>
                       <div className={styles.sectionTitle}>Office & Warehouse Relocations</div>
                       <ul className={styles.sectionList}>
@@ -140,12 +140,12 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
                     <Image className={styles.storeImage} alt="office space" height={200} width={400} src="/office.jpg"></Image>
-                  <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5 text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/#contact">Get office quote</a></div>
+                  <div className='bg-blue-500 z-40 font-gudea absolute md:top-10 xs:top-5 text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/#contact">Get office quote</a></div>
                   </Col>
                 </Row>
 
                 <Row xs={{ gutter: 0 }} noGutters={true}  className=" rounded-3xl d-flex flex-row-reverse flex-1 grow">
-                  <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 bg-yellow-50 p-6">
+                  <Col xs={12} md={6} className=" d-flex flex-col justify-center h-96 xs:bg-yellow-50 lg:bg-white p-6">
                     <Fade bottom>
                       <div className={styles.sectionTitle}>Packing & Unpacking</div>
                       <ul className={styles.sectionList}>
@@ -161,7 +161,7 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6}  className="px-0 relative">
                     <Image className={styles.storeImage} alt="person packing boxes" height={200} width={400} src="/packing.jpg"></Image>
-                    <div className='bg-blue-400 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/#contact">Let's talk packing</a></div>
+                    <div className='bg-blue-500 z-40 font-gudea absolute md:top-10 xs:top-5  right-0 text-white lg:p-6 xs:p-4 cursor-pointer rounded-l-3xl'><a href="/#contact">Let's talk packing</a></div>
 
                   </Col>
                 </Row>
@@ -211,7 +211,7 @@ const styles = {
   heroContainer: "mt-20 h-contain w-contain ",
   dogImage: "w-full h-full z-0",
   hero: "font-serif bold hidden md:block absolute text-2xl top-56 pl-9 md:text-4xl lg:text-5xl pl-5 md:left-6 lg:pl-6 lg:left-16 lg:top-72 ",
-  mobilehero: "font-serif bold  md:hidden absolute text-2xl top-36 pl-8 xs:text-3xl md:text-4xl lg:text-5xl pl-5 md:left-6 lg:pl-6 lg:left-16 lg:top-72 ",
+  mobilehero: "font-serif bold  md:hidden absolute text-2xl top-40 pl-8 xs:text-3xl md:text-4xl lg:text-5xl pl-5 md:left-6 lg:pl-6 lg:left-16 lg:top-72 ",
 
   heroTab: " border-2 right-0 h-72 w-2/5 bg-blue-400 rounded-2xl",
 
@@ -222,7 +222,7 @@ const styles = {
   // storageContainer: " flex flex-col w-[100vw] h-full lg:flex-row bg-yellow-100",
   //   section: "flex flex-1 flex-col mt-12 text-left",
       sectionTitle: " font-serif text-center text-3xl sm:text-4xl lg:text-4xl mb-12",
-      sectionList: "font-gauda text-m lg:text-xl text-left gap-4 justify-center align-center",
+      sectionList: "font-gauda xs:text-xl lg:text-2xl text-left gap-4 justify-center align-center",
 
     storeImage: "flex md:h-96 xs:h-56 w-full object-cover   ",
     buttonContainer: "flex justify-center items-center w-full mt-8",
