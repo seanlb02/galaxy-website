@@ -24,7 +24,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-reveal": "^1.2.2",
     "react-scroll-motion": "^0.3.2",
-    "sweetalert2": "^11.7.1"
+    "sweetalert2": "^11.4.8"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
