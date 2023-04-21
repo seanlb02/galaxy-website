@@ -34,7 +34,7 @@ export default function Home() {
       <link rel="icon" href='/iconlogo.svg'/>
     </Head>
       <NextSeo
-        title="Galaxy Relocations Sydney | Removals, Storage, Packing, Interstate"
+        title="Galaxy Removals Sydney | Removals, Storage, Packing, Interstate"
         description="Over 30 years of operation across the Sydney metro. Trusted experts in residential and commercial moves, packing, storage and interstate. Get a free quote today."
         // name="viewport" content="width=device-width, initial-scale=1"
         // {/* <link rel="icon" href="/favicon.ico" />

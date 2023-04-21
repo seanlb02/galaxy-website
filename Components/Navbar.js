@@ -10,7 +10,7 @@ export default function NavTab() {
   return (
     <Navbar className="w-[100vw] shadow-xs" collapseOnSelect expand="lg" bg="white" variant="light" fixed="top">
       <Container fluid className="py-2 w-full pe-5 ps-3 md:pe-6">
-        <Navbar.Brand className={styles.logo} href="/"><Image src="/relocationlogo.svg" alt="company logo" height={110} width={210}/></Navbar.Brand>
+        <Navbar.Brand className={styles.logo} href="/"><Image src="/logoblue.svg" alt="company logo" height={110} width={210}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-none outline-none" />
         <Navbar.Collapse id="responsive-navbar-nav">
           
