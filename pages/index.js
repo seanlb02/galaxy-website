@@ -84,7 +84,7 @@ export default function Home() {
             {/* </ScrollPage>
             </ScrollContainer> */}
             
-            <Container  className="lg:p-10 font-serif xs:p-0 m-0 rounded-t-3xl flex flex-col mt-4 " fluid xs={{ gutter: 0 }}>
+            <Container id="services" className="lg:p-10 font-serif xs:p-0 m-0 rounded-t-3xl flex flex-col mt-4 " fluid xs={{ gutter: 0 }}>
                 <Row xs={{ gutter: 0 }}  noGutters={true} className="pr-0 mb-5 gutter-x-0 flex-1 grow">
                   <Col xs={12} md={6} className=" d-flex flex-col h-96 justify-center xs:bg-blue-50 lg:bg-white p-8">
                     <Fade bottom>

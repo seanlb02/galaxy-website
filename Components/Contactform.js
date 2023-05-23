@@ -37,7 +37,7 @@ export default function Contact() {
 
 
     
-    <form id='form'  className='text-center justify-center mb-12 w-[80vw]' method="POST" action="https://mailthis.to/info@galaxyrelocations.com" >
+    <form id='form'  className='text-center justify-center mb-12 w-[80vw]' method="POST" action="https://mailthis.to/info@galaxyremovals.sydney" >
     
 	  
     {/* <input type="hidden" name="recaptcha_response" id="recaptchaResponse"/> */}
