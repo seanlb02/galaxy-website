@@ -1,5 +1,5 @@
 const config = {
-    siteUrl: 'https://www.galaxyrelocations.com/',
+    siteUrl: 'https://www.galaxyremovals.sydney/',
     generateRobotsTxt: true, // (Optional parameter for creating robots.txt file)
     // Other available options..
   }

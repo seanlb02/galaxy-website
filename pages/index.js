@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import NavTab from '@/Components/Navbar'
 import Container from 'react-bootstrap/Container';
@@ -56,7 +57,7 @@ export default function Home() {
                         <div className="curser-pointer text-2xl md:text-3xl lg:text-4xl font-serif text-white-600 md:mt-8 lg:mt-16 ">Removals | Storage | Packing | Interstate | Commercial</div>
                         <div className="flex absolute text-white-500 m-3 ml-12 bottom-0 lg:px-12 px-1 lg:text-2xl text-md text-center cursor-pointer lg:visible -left-0 md:left-0 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full px-0 text-md font-gudea "><Image height={25} width={25} src="/phonewhite.png"></Image>02 9664 6641</div>
 
-                        <div className="absolute border-2 text-slate-500 bg-white xs:m-2 lg:ml-12 xs:ml-5 mb-3 bottom-0 lg:w-auto lg:px-16 px-2 xs:h-auto lg:text-2xl text-md text-center cursor-pointer right-10 md:left-64 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full  text-md font-gudea ">Get A Quote</div>
+                        <div className="absolute border-2 text-slate-500 bg-white xs:m-2 lg:ml-12 xs:ml-5 mb-3 bottom-0 lg:w-auto lg:px-16 px-2 xs:h-auto lg:text-2xl text-md text-center cursor-pointer right-10 md:left-64 border-1 border-slate-200 transition ease-in-out duration-300 hover:-translate-y-1 rounded-full  text-md font-gudea "><Link href="/#contact">Get A Quote</Link></div>
                     
                       </div>
                   
@@ -99,7 +100,7 @@ export default function Home() {
                   </Col>
                   <Col xs={12} md={6} className="px-0 relative">
                     <Image className={styles.storeImage} alt="open boxes" height={200} width={400} src="/openbox.jpg"></Image>
-                    <div className='bg-blue-500 z-40 font-gudea absolute md:top-10 xs:top-5  text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/#pricing">Check our rates</a></div>
+                    <div className='bg-blue-500 z-40 font-gudea absolute md:top-10 xs:top-5  text-white lg:p-6 xs:p-4 cursor-pointer rounded-r-3xl'><a href="/#pricing">Inquire about rates</a></div>
                   </Col>
                 </Row>
 

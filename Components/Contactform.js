@@ -62,8 +62,8 @@ export default function Contact() {
       <MDBTextArea wrapperClass='mb-4 mt-4' name="details" label='Job details (location, date, rooms, items, access)' />
 
       <MDBInput label='Mobile' v-model='Mobile' name="mobile" wrapperClass='mb-4' />
-      <ReCAPTCHA sitekey="6LdE91clAAAAAIm4OUdhD1P9z9iJ_Lc6n7RUiLOY"
-                secretkey="6LdE91clAAAAALN5PFZj1hS_zgGZ72XnhBHEjdJa"
+      <ReCAPTCHA sitekey="6LdaZjAmAAAAAPsBlxUgkxR_kH65xVXDZLPsbguB"
+                secretkey="6LdaZjAmAAAAABZYvPKjMz81k0OoYzEREXHDlhQg"
                 onChange={onChange}
       />
       {disable ? <MDBBtn color='primary' block className='my-4'>
